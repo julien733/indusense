@@ -1,0 +1,139 @@
+{
+  "batch_id": "20261127_094152",
+  "status": "SUCCESS",
+  "started_at": "2026-11-27T09:41:52.758030+01:00",
+  "ended_at": "2026-11-27T09:42:03.180466+01:00",
+  "duration_seconds": 10.422,
+  "generated_files": 4,
+  "datasets": [
+    {
+      "source": "D:\\indusense\\datas\\releves_incidents.csv",
+      "name": "releves_incidents",
+      "rows": 1245,
+      "source_columns": 18,
+      "bronze_columns": 37,
+      "output": "D:\\indusense\\artifacts\\ingestion\\bronze\\releves_incidents_20261127_094152.csv",
+      "size_bytes": 460760
+    },
+    {
+      "source": "D:\\indusense\\datas\\telemetry.csv",
+      "name": "telemetry",
+      "rows": 135626,
+      "source_columns": 7,
+      "bronze_columns": 15,
+      "output": "D:\\indusense\\artifacts\\ingestion\\bronze\\telemetry_20261127_094152.csv",
+      "size_bytes": 27446910
+    },
+    {
+      "source": "D:\\indusense\\datas\\machine.sql.txt",
+      "name": "machine",
+      "rows": 15,
+      "source_columns": 11,
+      "bronze_columns": 23,
+      "output": "D:\\indusense\\artifacts\\ingestion\\bronze\\machine_20261127_094152.csv",
+      "size_bytes": 4740
+    },
+    {
+      "source": "D:\\indusense\\datas\\machine.sql.txt",
+      "name": "maintenance",
+      "rows": 115,
+      "source_columns": 11,
+      "bronze_columns": 23,
+      "output": "D:\\indusense\\artifacts\\ingestion\\bronze\\maintenance_20261127_094152.csv",
+      "size_bytes": 41424
+    }
+  ],
+  "checks": [
+    {
+      "name": "generated_file_count",
+      "status": "PASS",
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "name": "utf8_encoding",
+      "dataset": "releves_incidents",
+      "status": "PASS"
+    },
+    {
+      "name": "interleaved_type_columns",
+      "dataset": "releves_incidents",
+      "status": "PASS"
+    },
+    {
+      "name": "sha256_recalculation",
+      "dataset": "releves_incidents",
+      "status": "PASS"
+    },
+    {
+      "name": "source_values_preserved",
+      "dataset": "releves_incidents",
+      "status": "PASS"
+    },
+    {
+      "name": "utf8_encoding",
+      "dataset": "telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "interleaved_type_columns",
+      "dataset": "telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "sha256_recalculation",
+      "dataset": "telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "source_values_preserved",
+      "dataset": "telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "utf8_encoding",
+      "dataset": "machine",
+      "status": "PASS"
+    },
+    {
+      "name": "interleaved_type_columns",
+      "dataset": "machine",
+      "status": "PASS"
+    },
+    {
+      "name": "sha256_recalculation",
+      "dataset": "machine",
+      "status": "PASS"
+    },
+    {
+      "name": "source_values_preserved",
+      "dataset": "machine",
+      "status": "PASS"
+    },
+    {
+      "name": "utf8_encoding",
+      "dataset": "maintenance",
+      "status": "PASS"
+    },
+    {
+      "name": "interleaved_type_columns",
+      "dataset": "maintenance",
+      "status": "PASS"
+    },
+    {
+      "name": "sha256_recalculation",
+      "dataset": "maintenance",
+      "status": "PASS"
+    },
+    {
+      "name": "source_values_preserved",
+      "dataset": "maintenance",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "hash": {
+    "algorithm": "SHA-256",
+    "salt_source": "INDUSENSE_HASH_SALT"
+  }
+}
